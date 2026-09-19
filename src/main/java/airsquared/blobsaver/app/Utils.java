@@ -83,7 +83,7 @@ final class Utils {
 
     record LatestVersion(String version, String changelog) {
         static LatestVersion request() throws IOException {
-            JsonElement json = Network.makeJsonRequest("https://api.github.com/repos/airsquared/blobsaver/releases/latest");
+            JsonElement json = Network.makeJsonRequest("https://api.github.com/repos/betacat-ha/blobsaver/releases/latest");
             String tempChangelog = json.getAsJsonObject().get("body").getAsString();
             return new LatestVersion(json.getAsJsonObject().get("tag_name").getAsString(), tempChangelog.substring(tempChangelog.indexOf("Changelog")));
         }
