@@ -126,25 +126,25 @@
             <VBox.margin>
                 <Insets bottom="5.0" top="5.0"/>
             </VBox.margin>
-            <ChoiceBox fx:id="deviceTypeChoiceBox" prefWidth="150.0" disable="${identifierCheckBox.selected}"
-                       onAction="#clearEffectHandler" value="iPhone">
+            <ComboBox fx:id="deviceTypeChoiceBox" prefWidth="150.0" disable="${identifierCheckBox.selected}"
+                      onAction="#clearEffectHandler" value="iPhone">
                 <HBox.margin>
                     <Insets left="10.0"/>
                 </HBox.margin>
                 <items>
                     <Devices fx:factory="getDeviceTypes"/>
                 </items>
-                <selectionModel/>
-            </ChoiceBox>
-            <ChoiceBox fx:id="deviceModelChoiceBox" prefWidth="150.0" disable="${identifierCheckBox.selected}"
-                       onAction="#clearEffectHandler" onValueChange="#checkRequirements">
+            </ComboBox>
+            <ComboBox fx:id="deviceModelChoiceBox" prefWidth="150.0" visibleRowCount="10"
+                      disable="${identifierCheckBox.selected}" onAction="#clearEffectHandler"
+                      onValueChange="#checkRequirements">
                 <HBox.margin>
                     <Insets left="10.0"/>
                 </HBox.margin>
                 <items>
                     <Devices fx:factory="getiPhoneList"/>
                 </items>
-            </ChoiceBox>
+            </ComboBox>
         </HBox>
         <HBox alignment="CENTER_LEFT">
             <VBox.margin>

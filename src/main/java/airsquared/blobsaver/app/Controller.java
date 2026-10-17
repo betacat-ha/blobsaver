@@ -53,7 +53,7 @@ public class Controller {
     @FXML private MenuItem checkForUpdatesMenu, clearAllDataMenu, deleteDeviceMenu, backgroundSettingsMenu;
     @FXML private RadioMenuItem darkDisabled, darkSync, darkEnabled;
 
-    @FXML private ChoiceBox<String> deviceTypeChoiceBox, deviceModelChoiceBox;
+    @FXML private ComboBox<String> deviceTypeChoiceBox, deviceModelChoiceBox;
 
     @FXML private TextField ecidField, boardConfigField, apnonceField, generatorField, versionField, identifierField,
             pathField, ipswField;
