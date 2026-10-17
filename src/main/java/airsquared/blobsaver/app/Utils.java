@@ -116,7 +116,7 @@ final class Utils {
                 resizeAlertButtons(alert);
                 alert.showAndWait();
                 if (alert.getResult().equals(downloadNow)) {
-                    openURL("https://github.com/airsquared/blobsaver/releases");
+                    openURL("https://github.com/betacat-ha/blobsaver/releases");
                 } else if (alert.getResult().equals(ignore)) {
                     Prefs.setIgnoreVersion(newVersion.version());
                 }
@@ -197,11 +197,7 @@ final class Utils {
     }
 
     static void newGithubIssue() {
-        openURL("https://github.com/airsquared/blobsaver/issues/new/choose");
-    }
-
-    static void sendRedditPM() {
-        openURL("https://www.reddit.com/message/compose?to=01110101_00101111&subject=Blobsaver");
+        openURL("https://github.com/betacat-ha/blobsaver/issues/new/choose");
     }
 
     static void openURL(String url) {

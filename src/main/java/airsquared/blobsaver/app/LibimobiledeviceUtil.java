@@ -371,7 +371,7 @@ public class LibimobiledeviceUtil {
                 || errorType == ErrorCodeType.irecv_error)) {
                 ButtonType help = new ButtonType("Help");
                 if (help.equals(Utils.showUnreportableError(message, help, ButtonType.OK))) {
-                    Utils.openURL("https://github.com/airsquared/blobsaver/wiki/Errors-reading-from-device");
+                    Utils.openURL("https://github.com/betacat-ha/blobsaver/wiki/Errors-reading-from-device");
                 }
             } else if (reportable) {
                 Utils.showReportableError(message);

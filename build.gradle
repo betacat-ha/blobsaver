@@ -103,7 +103,7 @@ jlink {
     }
     jpackage {
         imageOptions = [ '--copyright', copyright, '--description', description]
-        installerOptions.addAll '--about-url', 'https://github.com/airsquared/blobsaver'
+        installerOptions.addAll '--about-url', 'https://github.com/betacat-ha/blobsaver'
         vendor = 'airsquared'
         installerOutputDir = file(layout.buildDirectory.dir('distributions'))
 

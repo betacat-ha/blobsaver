@@ -2,7 +2,7 @@ blank_issues_enabled: false
 
 contact_links:
 - name: Wiki & FAQ
-  url: https://github.com/airsquared/blobsaver/wiki
+  url: https://github.com/betacat-ha/blobsaver/wiki
   about: "Make sure you've checked the Wiki for solutions to your problem."
 - name: Discord (FDR Bureau)
   url: https://discord.gg/96wCSnwYVX

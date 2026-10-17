@@ -1,10 +1,8 @@
-Help support this project by ⭐️'ing it; [Donations](https://www.paypal.me/airsqrd) also appreciated!
+# blobsaver [![GitHub All Releases](https://img.shields.io/github/downloads/betacat-ha/blobsaver/total.svg)](https://github.com/betacat-ha/blobsaver/releases)
 
-# blobsaver [![GitHub All Releases](https://img.shields.io/github/downloads/airsquared/blobsaver/total.svg)](https://github.com/airsquared/blobsaver/releases) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d4fdc1daca5402a8c57efc3bef73d31)](https://www.codacy.com/gh/airsquared/blobsaver/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=airsquared/blobsaver&amp;utm_campaign=Badge_Grade)
+A cross-platform GUI and CLI for automatically saving SHSH blobs. [Download](https://github.com/betacat-ha/blobsaver/releases)
 
-A cross-platform GUI and CLI for automatically saving SHSH blobs. [Download](https://github.com/airsquared/blobsaver/releases)
-
-[Need help?](https://github.com/airsquared/blobsaver/wiki)
+[Need help?](https://github.com/betacat-ha/blobsaver/wiki)
 
 ![Mac Screenshot](.github/screenshots/screenshot-macos.png)
 
@@ -20,11 +18,11 @@ A cross-platform GUI and CLI for automatically saving SHSH blobs. [Download](htt
 
 ## Nightly Builds
 
-You can get the latest nightly build [here](https://nightly.link/airsquared/blobsaver/workflows/main/master) or get older nightly builds at [Actions](https://github.com/airsquared/blobsaver/actions).
+You can get the latest nightly build [here](https://nightly.link/betacat-ha/blobsaver/workflows/main/master) or get older nightly builds at [Actions](https://github.com/betacat-ha/blobsaver/actions).
 
 ## Feedback
 
-Please send feedback via [Github Issue](https://github.com/airsquared/blobsaver/issues/new/choose) if you encounter any
+Please send feedback via [Github Issue](https://github.com/betacat-ha/blobsaver/issues/new/choose) if you encounter any
 bugs/problems or have a feature request.
 
 ## Built With
@@ -37,5 +35,5 @@ bugs/problems or have a feature request.
 
 See the full credits [here](dist/libraries_used.txt).
 
-## License [![GitHub license](https://img.shields.io/github/license/airsquared/blobsaver.svg)](https://github.com/airsquared/blobsaver/blob/master/LICENSE)
-This project is licensed under GNU GPL v3.0-only - see the [LICENSE](https://github.com/airsquared/blobsaver/blob/master/LICENSE) file for details
+## License [![GitHub license](https://img.shields.io/github/license/betacat-ha/blobsaver.svg)](https://github.com/betacat-ha/blobsaver/blob/master/LICENSE)
+This project is licensed under GNU GPL v3.0-only - see the [LICENSE](https://github.com/betacat-ha/blobsaver/blob/master/LICENSE) file for details

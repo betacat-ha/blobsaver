@@ -90,9 +90,6 @@
                 <SeparatorMenuItem mnemonicParsing="false"/>
                 <MenuItem mnemonicParsing="false" onAction="#showWiki" text="blobsaver Help/Wiki"/>
                 <MenuItem mnemonicParsing="false" onAction="#newGithubIssue" text="Send Feedback (Github Issue)"/>
-                <MenuItem mnemonicParsing="false" onAction="#sendRedditPM" text="Send Feedback (Reddit PM)"/>
-                <SeparatorMenuItem mnemonicParsing="false"/>
-                <MenuItem mnemonicParsing="false" onAction="#donate" text="Donate!"/>
                 <MenuItem mnemonicParsing="false" onAction="#aboutMenuHandler" text="About"/>
             </Menu>
         </MenuBar>

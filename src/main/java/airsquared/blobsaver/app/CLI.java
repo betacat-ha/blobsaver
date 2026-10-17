@@ -184,16 +184,6 @@ public class CLI implements Callable<Void> {
         }
     }
 
-    @Command(description = "Help support me and the development of this application! (I'm only a student)")
-    void donate() {
-        System.out.println("""
-                You can donate with GitHub Sponsors at
-                https://github.com/sponsors/airsquared
-                or with PayPal at
-                https://www.paypal.me/airsqrd.
-                Thank you!""");
-    }
-
     @Command(name = "read-info", description = "Reads ECID, identifier, board configuration, device type, and device name.")
     void readInfo() throws LibimobiledeviceException {
         long ecid = LibimobiledeviceUtil.getECID();
@@ -244,17 +234,18 @@ public class CLI implements Callable<Void> {
     public static class VersionProvider implements IVersionProvider {
         @Override
         public String[] getVersion() {
-            String[] output = {"blobsaver " + Main.appVersion, Main.copyright, "Licence: GNU GPL v3.0-only", null,
-                    "%nHomepage: https://github.com/airsquared/blobsaver"};
+            String[] output = {"blobsaver " + Main.appVersion, Main.copyright, "Maintained by " + Main.maintainer,
+                    "Licence: GNU GPL v3.0-only", null,
+                    "%nHomepage: https://github.com/betacat-ha/blobsaver"};
             try {
                 var newVersion = Utils.LatestVersion.request();
                 if (Main.appVersion.equals(newVersion.version())) {
-                    output[3] = "%nYou are on the latest version.";
+                    output[4] = "%nYou are on the latest version.";
                 } else {
-                    output[3] = "%nNew Update Available: " + newVersion + ". Update using your package manager or at%n https://github.com/airsquared/blobsaver/releases";
+                    output[4] = "%nNew Update Available: " + newVersion + ". Update using your package manager or at%n https://github.com/betacat-ha/blobsaver/releases";
                 }
             } catch (Exception e) {
-                output[3] = "%nUnable to check for updates.";
+                output[4] = "%nUnable to check for updates.";
             }
 
             return output;

@@ -3,7 +3,7 @@
 #define MyAppName "@Name@"
 #define MyAppVersion "@Version@"
 #define MyAppPublisher "airsquared"
-#define MyAppURL "https://www.github.com/airsquared/@Name@"
+#define MyAppURL "https://github.com/betacat-ha/@Name@"
 #define MyAppExeName "@Name@.exe"
 #define MyAppCopyright "@Copyright@"
 #define OutputDir "@OutputDir@"

@@ -112,8 +112,6 @@ public class Controller {
 
     public void newGithubIssue() { Utils.newGithubIssue(); }
 
-    public void sendRedditPM() { Utils.sendRedditPM(); }
-
     public void clearEffectHandler(Event evt) {
         ((Node) evt.getSource()).setEffect(null);
     }
@@ -335,7 +333,7 @@ public class Controller {
         alert.setHeaderText("Tips");
         alert.showAndWait();
         if (openURL.equals(alert.getResult())) {
-            Utils.openURL("https://github.com/airsquared/blobsaver/wiki/Automatically-saving-blobs-to-the-cloud");
+            Utils.openURL("https://github.com/betacat-ha/blobsaver/wiki/Automatically-saving-blobs-to-the-cloud");
         }
     }
 
@@ -365,13 +363,13 @@ public class Controller {
 
         alert.setTitle("About");
         alert.setHeaderText("blobsaver " + Main.appVersion);
-        alert.setContentText("blobsaver " + Main.copyright + "\n\n" +
+        alert.setContentText("blobsaver " + Main.copyright + "\nMaintained by " + Main.maintainer + "\n\n" +
                 "This program is licensed under GNU GPL v3.0-only");
         Utils.resizeAlertButtons(alert);
 
         alert.showAndWait();
         switch (alert.getResult().getText()) {
-            case "GitHub Repo" -> Utils.openURL("https://github.com/airsquared/blobsaver");
+            case "GitHub Repo" -> Utils.openURL("https://github.com/betacat-ha/blobsaver");
             case "License" -> Utils.openURL(Utils.getLicenseFile().toURI().toString());
             case "Libraries Used" -> Utils.openURL(Utils.getLibrariesUsedFile().toURI().toString());
         }
@@ -546,7 +544,7 @@ public class Controller {
     }
 
     public void showWiki() {
-        Utils.openURL("https://github.com/airsquared/blobsaver/wiki");
+        Utils.openURL("https://github.com/betacat-ha/blobsaver/wiki");
     }
 
     public void readInfo() {
@@ -631,8 +629,6 @@ public class Controller {
         }
         Analytics.exitRecovery();
     }
-
-    public void donate() { Utils.openURL("https://www.paypal.me/airsqrd"); }
 
     public void goButtonHandler() {
         // check inputs
