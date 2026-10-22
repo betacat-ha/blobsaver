@@ -38,7 +38,7 @@ import static com.sun.jna.Platform.isWindows;
 
 public class Main {
 
-    static final String appVersion = "v3.6.1";
+    static final String appVersion = "v3.6.2";
     static final String copyright = "Copyright (c) 2023 airsquared";
     static final String maintainer = "BetaCat_HA";
     static Stage primaryStage;
