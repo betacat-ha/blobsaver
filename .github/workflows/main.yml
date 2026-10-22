@@ -11,13 +11,15 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest, macos-15-intel]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up JDK
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v6
         with:
           java-version: '21'
           distribution: 'zulu'
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          cache-provider: basic
       - name: Install Linux dependencies
         run: |
           sudo apt-get update
@@ -25,7 +27,7 @@ jobs:
         if: runner.os == 'Linux'
       - name: Gradle build
         run: ./gradlew build --no-daemon
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
 #          artifact-per-file: true
 #          artifact-name-rule: ${{ runner.os }}${ext}
@@ -33,7 +35,7 @@ jobs:
           path: build/distributions/*
       - name: Upload reports on failure
         if: ${{ failure() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: failure-${{ runner.os }}
           path: build/reports/
@@ -44,7 +46,7 @@ jobs:
     if: "startsWith(github.event.head_commit.message, 'Release')"
     steps:
       - name: Get artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
       - name: Get version from commit
         run: echo "VERSION=$(echo ${{ github.event.commits[0].message }} | awk '{print $2}')" >> $GITHUB_ENV
       - name: Release public builds
